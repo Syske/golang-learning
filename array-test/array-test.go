@@ -14,7 +14,7 @@ func main() {
 	fmt.Println(slip1)
 
 	fmt.Println(len(slip1))
-	// 如下会报错：invalid argument: index -1 (constant of type int) must not be negative
+	// 如下写法会报错：invalid argument: index -1 (constant of type int) must not be negative
 	// fmt.Println(arr[:-1])
 	fmt.Println(arr[:len(arr) - 1])
 
