@@ -12,6 +12,7 @@ func main() {
 	// map的key可以是任意可以用 == 或者 != 操作符比较的类型，比如 string、int、float32(64)
 	map3 := make(map[string][]string)
 	map3["test"] = []string{"map", "value"}
+	map3["syke"] = []string{"lei", "ying"}
 	fmt.Println(map3)
 	// 判断一个key是否存在
 	key := "one"
@@ -19,7 +20,10 @@ func main() {
 	if isPresent {
 		fmt.Printf("val1=%d\n", val1)
 	} else {
-		fmt.Printf("key %s is not exist", key)
-
+		fmt.Printf("key %v is not exist", key)
+	}
+	// 遍历map
+	for key, value := range map3 {
+		fmt.Printf("key=%v, value=%v\n", key, value)
 	}
 }
