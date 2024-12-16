@@ -17,5 +17,9 @@ func (re *Rectangle) Add() int {
 
 func main() {
 	rect := Rectangle{2, 3}
-	fmt.Println(rect.Add())
+	fmt.Printf("rect.height:%d\n", rect.height)
+	fmt.Printf("rect add result:%d\n", rect.Add())
+
+	rect1 := Rectangle{width: 2}
+	fmt.Printf("rect1:%s", rect1)
 }
