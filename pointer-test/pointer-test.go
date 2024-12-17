@@ -62,5 +62,7 @@ func main() {
 	Scale(&v, 10)
 	fmt.Println(v)
 	fmt.Println(Abs(v))
+	// 编译错误
+	// fmt.Println(Abs(p2))
 
 }
